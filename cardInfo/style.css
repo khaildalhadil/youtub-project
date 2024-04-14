@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #426696;
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+h2,
+.skills p {
+    color: #426696;
+    opacity: .8;
+}
+
+h3 {
+    font-size: 18px;
+    color: #426696;
+}
+
+p {
+    font-size: 16px;
+    color: #426696;
+}
+
+.constent__card { 
+    height: 100vh;
+    /* width: 100%; 
+    */
+    background: linear-gradient(to right bottom, #50c9c3, #96deda);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    /* height: 80%; */
+    height: 750px;
+    width: 1100px;
+    /* width: 60vw; */
+    border-radius: 20px;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+    /* backdrop-filter: blue(20px);    */
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.my__info {
+    background: red;
+    flex: 1;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* backdrop-filter: blur(100px); */
+}   
+
+.header__my__info img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.body__my__info {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+.body__my__info div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.body__my__info i{
+    font-size: 40px;
+    background: linear-gradient(to right top, #56f3eb, #006577);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body__my__info h3,
+.header__my__info p,
+.header__my__info h3 {
+    color: #006577;
+    opacity: .7;
+}
+
+.header__my__info h3 {
+    opacity: .8;
+}
+
+.footer__my__info {
+    /* width: 80%; */
+    width: 280px;
+    background: linear-gradient(to left bottom, #56f3eb , #006577 100%);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 10px;
+}
+
+.footer__my__info h3 {
+    color: #fff;
+    width: 40%;
+    padding: 20px 5px;
+}
+
+.footer__my__info i {
+    font-size: 70px;
+    color: rgb(255, 78, 78);
+    padding-left: 30px;
+    /* padding-top: 20px; */
+    /* transform: rotate(-30deg); */
+
+}
+
+.skills {
+    flex: 2;
+    padding: 40px 60px;
+    margin-top: 30px;
+    position: relative;
+}
+
+/* .header__skills */
+input {
+    padding: 7px 50px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    outline: none;
+    background: #56f3eb
+}
+
+.skills__header input {
+    background: #f7f7f7;
+}
+
+.body__card {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 85%;
+}
+
+/* .FF5733 */
+.skills__body {
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 20px 30px;
+}
+
+.skills__body img {
+    height: 110px;
+}
+
+.skills__body i {
+    font-size: 100px;
+    color: #FF5733;
+}
+
+.skills__body .fa-css3-alt {
+    color: #0277BD
+}
+
+.skills__body .fa-js {
+    /* background: #FFD600; */
+    stroke: #FFD600;
+    color: #FFD600;
+}
+
+.center--body div {
+    background: #50c9c3;
+    padding: 15px 150px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.skills__body .presanteg {
+    color: #50c9c3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.circle,
+.square {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left, rgba(255,255,255,0.6),rgba(255,255,255,0.3));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.square {
+    top: 5%;
+    right: 10%;
+    background: #419aff;
+}
+
+.circle {
+    background: #f41b75;
+    bottom: 40px;
+    border-radius: 10%;
+    left: 190px;
+    transform: rotate(-20deg);
+}
+
+.center--body div {
+    position: relative;
+}
+
+.center--body  div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #e0e0e0;
+    border-radius:  0px 20px 20px 0px;
+}
+
+.center--body .html::after {
+    width: 20%;
+}
+
+.center--body .css::after {
+    width: 30%;
+}
+.center--body .js::after {
+    width: 45%;
+}
